@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .back {
+            background-color: #e5efd3;
+            background-image: linear-gradient(to bottom right, #e5efd3, rgb(103, 166, 225));
+            background-size: cover;
+            position: fixed;
+            padding: auto;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .content {
+            background-color: #66aadb;
+            background-image: linear-gradient(to bottom left, #e5efd3, rgb(103, 166, 225));
+            background-size: cover;
+            position: fixed;
+            padding: auto;
+            top: 15%;
+            left: 30%;
+            height: 70%;
+            width: 65%;
+            border-radius: 30px;
+            box-shadow: 10px 10px 5px #455560;
+        }
+
+        .back .profile {
+            background-color: #c77ad7;
+            background-image: linear-gradient(to top right, #f5faed, rgb(255, 255, 255));
+            position: fixed;
+            padding: auto;;
+            height: 60%;
+            width: 20%;
+            top: 20%;
+            left: 5%;
+            border-radius: 30px;
+            box-shadow: 10px 10px 5px #888888;
+        }
+
+        .text_con {
+            padding: 20px;
+            display: flex;
+            text-indent: 1em;
+        }
+
+        #who {
+            position: relative;
+            padding: auto;
+            height: 10%;
+            width: 80%;
+            top: 5%;
+            left: 5%;
+            text-align:center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="profile">
+                <div id="who">
+                    <h1><em style="font-size: 1.4em;">Who am I?</em></h1>
+                </div>
+
+            </div>
+            <div class="content">
+                <h1 class="text_con">Hello</h1>
+            </div>
+        </div>
+    </body>
 </html>
