@@ -65,6 +65,46 @@
             bottom: -13px;
         }
 
+        .card1 {
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            height: 90px;
+            width: 250px;
+            padding: 20px;
+            margin: 40px;
+            top: 20px;
+            left: 80px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+            display: block;
+        }
+
+        .card2 {
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            height: 90px;
+            width: 250px;
+            padding: 20px;
+            margin: 40px;
+            top: -490px;
+            left: 470px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+        }
+
+        .card3 {
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            height: 90px;
+            width: 250px;
+            padding: 20px;
+            margin: 40px;
+            top: -490px;
+            left: 880px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+        }
+
         #who {
             position: relative;
             padding: auto;
@@ -88,9 +128,19 @@
             height: 60%;
             top: 20%;
             left: 20%;
-            animation: rotate 5s infinite;
+            animation: rotate 8s infinite;
             animation-timing-function: linear;
             animation-play-state: running;
+        }
+
+        #intro {
+            position: relative;
+            width: 80%;
+            height: auto;
+            top: 15%;
+            left: 10%;
+            font-size: 1.2em;
+            font-family: 'Microsoft YaiHei';
         }
 
         .svg {
@@ -144,27 +194,44 @@
     </head>
     <body>
         <div class="back">
-            <div class="profile">
+            <div class="profile" onclick="al()">
                 <div id="who">
                     <h1><em style="font-size: 1.4em;">Who am I?</em></h1>
                 </div>
                 <div id="ava_con">
                     <img id="avatar" src="img/avatar.jpg">
+                    <!-- <div>
+                        <img id="avatar_frame" src="img/avatar_frame.png">
+                    </div> -->
                 </div>
                 <div id="intro">
-
+                    <p><em>-- 性别  ♂</em></p>
+                    <p><em>-- 出生时刻  4.18.22:16</em></p>
+                    <p><em>-- 联系我?  戳下面</em></p>
                 </div>
 
             </div>
             <div class="content">
                 <h1 class="text_con">Hello</h1>
+
                 <div class="img">
-                    <a href="https://www.pixiv.net/en/artworks/96323044"><img
+                    <a href="https://www.pixiv.net/en/artworks/96323044"
+                        target="_blank"><img
                             src="img/uma_0.png"></a>
                 </div>
+
+                <div class="card1">1</div>
+                <div class="card1">2</div>
+                <div class="card1">3</div>
+                <div class="card2">4</div>
+                <div class="card2">5</div>
+                <div class="card2">6</div>
+                <div class="card3">7</div>
+                
             </div>
             <div class="iconbox">
-                <a href target="_blank"><img class="svg" style="left: 40%;"
+                <a href="https://twitter.com/abalaxxx" target="_blank"><img
+                        class="svg" style="left: 40%;"
                         src="img/svg/twitter.svg"></a>
                 <a href target="_blank"><img class="svg" style="left: 45%;"
                         src="img/svg/mail.svg"></a>
@@ -173,9 +240,15 @@
                         src="img/svg/github.svg"></a>
                 <a href target="_blank"><img class="svg" style="left: 55%;"
                         src="img/svg/tele.svg"></a>
-                <a href target="_blank"><img class="svg" style="left: 60%;"
+                <a href="https://discord.com/channels/1237404912934060124/1237404914339287194"
+                    target="_blank"><img class="svg" style="left: 60%;"
                         src="img/svg/discord.svg"></a>
             </div>
         </div>
+        <script>
+            function al() {
+                alert("test")
+            }
+        </script>
     </body>
 </html>
