@@ -18,6 +18,21 @@
             width: 100%;
         }
 
+        .start {
+            background-color: #fffa96;
+            background-size: cover;
+            position: fixed;
+            padding: auto;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align:center;
+            z-index: 1;
+            animation: start 2.5s alternate;
+            animation-fill-mode: forwards;
+        }
+
         .content {
             background-color: #66aadb;
             background-image: linear-gradient(to bottom left, #e5efd3, rgb(103, 166, 225));
@@ -138,6 +153,18 @@
             bottom: 4%;
         }
 
+        @keyframes start {
+            0% {
+                left: 0%;
+            }
+            50% {
+                left: 0%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
         @keyframes after_cover {
             from {
                 top: 14.5%;
@@ -181,6 +208,9 @@
     </style>
     </head>
     <body>
+        <div class="start">
+            <h1 style="font-size: 6em;"><em>Welcome --></em></h1>
+        </div>
         <div class="back">
             <div class="profile" onclick="al()">
                 <div id="who">
@@ -195,7 +225,7 @@
                 <div id="intro">
                     <p><em>-- 性别  ♂</em></p>
                     <p><em>-- 出生时刻  4.18.22:16</em></p>
-                    <p><em>-- 联系我?  戳下面</em></p>
+                    <p><em>-- 交个朋友吧~  戳下面</em></p>
                 </div>
 
             </div>
